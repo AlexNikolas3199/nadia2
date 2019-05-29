@@ -16,9 +16,9 @@
     	    <div class="lan " id="len3"></div>
         </div>
 		<ul id="move">
-			<li><a href="#one">Программа мероприятия</a></li>
-			<li><a href="#two">Время и дата</a></li>
-			<li><a href="#three">Адрес и контакты</a></li>
+			<li class="f"><a href="#one">Программа мероприятия</a></li>
+			<li class="ff"><a href="#two">Время и дата</a></li>
+			<li class="fff"><a href="#three">Адрес и контакты</a></li>
 		</ul>
 	</nav>
 	<header>
@@ -110,6 +110,9 @@
 		var form=document.querySelector(".form");
 		var black=document.querySelector(".black");
 		var close=document.querySelector(".close");
+		var f=document.querySelector(".f");
+		var ff=document.querySelector(".ff");
+		var fff=document.querySelector(".fff");
 		btn.onclick=function(){
 			form.style.display="block";
 			black.style.display="block";
@@ -144,11 +147,29 @@
    	   lin3.classList.add("len3");
    		}
    	}
-   	$(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-   });
-   	
-  
+   
+   	ff.onclick=function(){
+   		div.classList.add("mave");
+   	  dav.classList.add("up");
+   	   lin1.classList.add("len1");
+   	   lin2.classList.add("len2");
+   	   lin3.classList.add("len3");
+   	}
+
+   	f.onclick=function(){
+   		div.classList.remove("mave");
+   			dav.classList.remove("up");
+   			lin1.classList.remove("len1");
+   			lin2.classList.remove("len2");
+   			lin3.classList.remove("len3");
+   	}
+   	fff.onclick=function(){
+   		div.classList.remove("mave");
+   			dav.classList.remove("up");
+   			lin1.classList.remove("len1");
+   			lin2.classList.remove("len2");
+   			lin3.classList.remove("len3");
+   	}
 	</script>
 </body>
 </html>

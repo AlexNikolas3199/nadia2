@@ -153,7 +153,8 @@ section button{
 	font-family: Gabriela;
 	transition: 0.3s;
 	animation: puls 1s normal infinite;
-	outline: none
+	outline: none;
+	cursor: pointer;
 }
 section button:hover{
     color:white;

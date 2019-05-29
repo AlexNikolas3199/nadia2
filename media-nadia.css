@@ -65,4 +65,9 @@
    	width:82px;
    	height:82px;
   }
+  footer .box_adress{
+  	position: static;
+    border:none;
+    box-shadow: none
+  }
 }
