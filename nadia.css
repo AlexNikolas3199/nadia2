@@ -1,0 +1,280 @@
+@font-face{
+	font-family: "Gabriela";
+	src:url(GabrielaRegular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Gabriela
+}
+nav #move{
+	margin:20px;
+	padding:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	z-index: 3;
+}
+nav ul li {
+		overflow: hidden;
+		padding: 10px 10px 10px 0;
+		margin: 0 50px 0 0;
+}
+nav ul li a{
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ec407a;
+	text-shadow: 1px 2px 3px #f48fb1;
+	transition: 0.3s
+}
+nav ul li a:after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -2px;
+    right: 110%;
+    height: 2px;
+    background:#ec407a;
+    transition: 0.3s 
+}
+nav ul li a:hover:after{
+    right: 0;
+}
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+header img{
+	height:670px;
+	border: outset 12px #ec407a;
+	padding: 5px;
+	border-radius: 20px
+}
+header span{
+	margin:15px 0; 
+	text-align: center;
+	vertical-align: middle;
+	width:550px;
+	font-size: 40px;
+	color: #ec407a;
+	text-shadow: 2px 2px 3px #880e4f
+}
+
+header span p{
+	margin: 0
+}
+article{
+	background: url(roza.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height:300px;
+}
+
+main h2{
+	font-size: 40px;
+	font-weight: bold;
+	color:#f48fb1;
+	text-shadow: 2px 3px 2px #880e4f
+}
+main ul li{
+	list-style:none;
+	margin: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ec407a;
+	text-shadow: 1px 1px 2px #880e4f
+}
+main ul{
+	margin: 0;
+	padding: 0;
+}
+main ul li:last-child{
+	margin-top:30px;
+	margin-left:50px;
+}
+main ul li time{
+	margin:10px;
+	color:#f48fb1;
+	font-size:40px 
+}
+.colors div{
+	height:220px;
+	width: 220px;
+	margin: 20px 7px 20px 7px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 6px #880e4f
+}
+.colors div:nth-child(1){
+ background: #e53935
+}
+.colors div:nth-child(2){
+ background: #c2185b
+}
+.colors div:nth-child(3){
+ background: #ec407a
+}
+.colors div:nth-child(4){
+ background:#ff80ab
+}
+.colors div:nth-child(5){
+ background: #880e4f
+}
+aside h2{
+	font-size: 40px;
+	color: #ec407a;
+}
+aside p{
+	font-size: 30px;
+	color: #ec407a;
+	font-weight: bold;
+}
+aside  decoration{
+	text-decoration: underline;
+	color:#e53935
+}
+section{
+    height:300px; 
+}
+section button{
+	background: none;
+	border:solid 2px #ec407a;
+	color: #ec407a;
+	padding:20px 30px;
+	font-size: 30px;
+	border-radius: 50px;
+	font-family: Gabriela;
+	transition: 0.3s;
+	animation: puls 1s normal infinite;
+	outline: none
+}
+section button:hover{
+    color:white;
+    background:#ec407a
+}
+@keyframes puls{
+	0%{
+       box-shadow: 0 0 1px 0 #eeeeee
+	}
+	100%{
+         box-shadow: 0 0 1px 30px #ffffff
+	}
+}
+footer{
+	height:50vh
+}
+footer h2{
+     font-size: 50px;
+     text-transform: uppercase;
+}
+footer .box_adress{
+	position: absolute;
+	left:10%;
+	margin-top:5%;
+	border:solid #c2185b 5px;
+	border-radius: 14px;
+	padding: 30px 10px 0 30px;
+	color:#c2185b;
+	font-size: 20px;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 3px 3px 10px #880e4f
+}
+footer .box_adress i{
+	font-size: 40px
+}
+footer .box_adress h3{
+	font-size: 40px;
+	margin:0;
+}
+input[type="radio"]{
+	margin-right:10px; 
+}
+.form{
+	background: white;
+    position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	top:20vh;
+	border-radius: 20px;
+	padding: 4vh 4vw 4vh 4vw;
+	display: none;
+	z-index: 2;
+	border:1px solid red;
+}
+.black{
+	width:100vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	margin-left:auto;
+	margin-right: auto; 
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+	display: none;
+}
+.close {
+position: absolute;
+right: 32px;
+top: 32px;
+width: 32px;
+height: 32px;
+opacity: 0.3;
+transition: 0.3s;
+cursor: pointer;
+}
+.close:hover {
+opacity: 1;
+transform: rotate(90deg) scale(1.2);
+}
+.close:before, .close:after {
+position: absolute;
+left: 15px;
+content: ' ';
+height: 33px;
+width: 2px;
+background-color: #333;
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}
+
+
+
+.knopka{
+	display: none;
+	width:50px;
+	height:50px;
+	top:3px;
+	left:6px;
+	background: #c2185b;
+	border-radius: 2px;
+	position: fixed;
+	border: solid 3px #ff80ab;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+.lan{
+	width:29px;
+	height:3px;
+	background: #ff80ab;
+	margin: 5px auto;
+	border-radius: 10%;
+	transition: 0.3s
+}
+.lan:first-child{
+	margin-top:15px;
+}
+
+
+
+

@@ -1,0 +1,68 @@
+@media  screen and (max-width:968px){
+
+	header img{
+		height:400px;
+		margin-top:50px;
+	}
+
+
+	.knopka{
+		display: block;
+	
+		z-index: 11;
+		cursor: pointer
+	}
+   nav  #move{
+		 background: #880e4f;
+         position:fixed;
+         display: block;
+         left:-420px;
+         top:-20px;
+         height:100vh;
+         box-shadow:5px 0 25px black;
+         transition: 0.3s;
+		}
+	 nav  #move li{
+	 	margin:50px 0 0 20px;
+	 	font-size: 10px;
+	 	width:200px 
+	}
+	nav  #move li:first-of-type{
+		margin:90px 0 0 20px;
+	}
+	 nav  #move li a{
+	 		font-size: 20px	
+	 }
+
+    .mave{
+    	transform:translateX(400px)
+    }
+    .up{
+    	transform:translateX(30px) translateY(10px) rotate(180deg)
+    }
+   .len1{
+        transform: translateY(8px) rotate(45deg);
+   }
+   .len2{
+    	opacity: 0
+   }
+   .len3{
+		 transform: translateY(-8px) rotate(-45deg);
+   }
+   header span{
+   	font-size: 30px
+   }
+   main ul li{
+   	font-size: 16.5px;
+   	margin-left:0;
+   	text-shadow: none
+   }
+   main ul li time{
+   	font-size: 16px;
+   	margin-left:0;
+   }
+   .colors div{
+   	width:82px;
+   	height:82px;
+  }
+}
