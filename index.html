@@ -78,16 +78,21 @@
 			<p>Имя *</p>
 			<input type="text" name="name" required>
 		</label>
-		<label>
-			<p>Сколько будет от вас гостей?</p>
-			<div class="radio"><p><input type="radio" name="contact">1</p></div>
-			<div class="radio"><p><input type="radio" name="contact">2</p></div>
-            <div class="radio"><p><input type="radio" name="contact">3</p></div>
-		    <div class="radio"><p><input type="radio" name="contact">4</p></div>
-		    <div class="radio"><p><input type="radio" name="contact">5</p></div>		
-   		</label>
-   			<label>
-			<input  type="submit" class="submit" value="Отправить">
+		<h3>Сколько будет от вас гостей?</h3>
+		<div class="radio">
+	    <input id="1" type="radio" value="1" checked name="quantity">
+	    <label class="labelradio" for="1">1</label>
+	    <input id="2" type="radio"value="2" name="quantity">
+	    <label class="labelradio" for="2">2</label>
+	    <input id="3" type="radio"value="3" name="quantity">
+	    <label class="labelradio" for="3">3</label>
+	    <input id="4" type="radio"value="4" name="quantity">
+	    <label class="labelradio" for="4">4</label>
+	    <input id="5" type="radio"value="5" name="quantity">
+	    <label class="labelradio" for="5">5</label>
+	</div>
+   		<label>
+			<input align="center"  type="submit" class="submit" value="Отправить">
 		</label>
 	  </form>
 	</div>

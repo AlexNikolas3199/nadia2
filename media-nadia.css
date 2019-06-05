@@ -65,6 +65,9 @@
    	width:82px;
    	height:82px;
   }
+  .colors div:nth-child(5){
+  	display: none
+  }
   footer .box_adress{
   	position: static;
     border:none;
