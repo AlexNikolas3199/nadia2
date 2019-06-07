@@ -195,95 +195,30 @@ footer .box_adress h3{
 	font-size: 40px;
 	margin:0;
 }
-input[type="radio"]{
-	margin-right:10px; 
-}
 .form{
 	background: white;
     position: fixed;
 	margin-left: auto;
 	margin-right: auto;
-	top:3vh;
+	top:10vh;
 	border-radius: 20px;
 	padding: 4vh 4vw 4vh 4vw;
 	display: none;
 	z-index: 2;
 	border:3px solid #ec407a;
+	transition: 1.3s
 }
-.form input[type="text"]{
-	border:solid #ec407a 3px;
-	border-radius: 5px;
-	padding: 5px 5px 10px 5px
-}
+
 .form h3{
 	color:#ec407a;
+	font-size:30px;
 }
-.form p{
-	color:#c2185b;
-	margin: 2px 0 2px 0;
-}
-.form input[type="submit"]{
-	margin-top:15px;
-	margin-left:15%;
-	background: none;
-	border:solid 2px #ec407a;
-	color: #ec407a;
-	padding:15px 25px;
-	font-size: 25px;
-	border-radius: 50px;
-	font-family: Gabriela;
-	transition: 0.3s;
-	outline: none;
-	cursor: pointer;
-}
-.form input[type="submit"]:hover{
-	 color:white;
-    background:#ec407a
-}
-.labelradio{
-	 display: inline-block;
-	 cursor: pointer;
-	 position: relative;
-	 padding-left: 25px;
-	 margin-right: 15px;
-	 font-size: 13px;
-	 color:#ec407a;
-	 font-weight: bold;
-	 transition: 0.3s ease-in-out 
-}
-input[type=radio] {
-	display: none;
-}
-.labelradio:before {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
- 	position: absolute;
-	left: 0;
-	bottom: 1px;
- 	background-color: #ff80ab;
- 	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-}
-.radio .labelradio:before {
-	border-radius: 10px;
-}
-input[type=radio]:checked + .labelradio:before {
-	content: "\2022";
-	color: #ec407a;
-	font-size: 50px;
-	text-align: center;
-	line-height: 19px;
-	transition: 0.2s 
-}
+
 .black{
 	width:100vw;
 	height: 100vh;
 	position: fixed;
 	top:0;
-	margin-left:auto;
-	margin-right: auto; 
 	background-color: rgba(0,0,0,0.7);
 	z-index: 1;
 	display: none;
