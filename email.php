@@ -52,10 +52,9 @@ button:hover{
 	<a href="index.html"><button>Вернуться</button></a>
    </div>
 	<?php
-		$surname = $_POST['surname'];
-		$name = $_POST['name'];
-		$radio = $_POST['quantity'];
-		mail("12345678nikolaev@gmail.com", "ЗАЯВКА НА ДР", $surname." ".$name." ".$radio);
+		$fio = $_POST['surname'];
+		$email = $_POST['name'];
+		mail("golden9208@gmail.com", "ну че", "теперь работает?");
 	?>
 </body>
 </html>
