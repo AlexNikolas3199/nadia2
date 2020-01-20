@@ -9,10 +9,6 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: Gabriela;
-	background: url(BROTHERS.png) no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 50% 50%
 }
 nav #move{
 	margin:20px;
@@ -22,6 +18,7 @@ nav #move{
 	align-items: center;
 	list-style: none;
 	z-index: 3;
+	border:d;
 }
 nav ul li {
 		overflow: hidden;
@@ -56,7 +53,7 @@ nav ul li a:hover:after{
 	flex-wrap: wrap;
 }
 header img{
-	height:670px;
+	height:625px;
 	border: outset 12px #ec407a;
 	padding: 5px;
 	border-radius: 20px
